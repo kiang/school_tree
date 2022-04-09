@@ -172,6 +172,7 @@ function showPoint(pointId) {
           }
           vectorTree.getSource().clear();
           vectorTree.getSource().addFeatures(treeFeatures);
+          sidebar.close();
         });
       }
     }
@@ -254,6 +255,7 @@ $.getJSON('https://kiang.github.io/edutreemap.moe.edu.tw/json/tree.json', {}, fu
         }),
         url: 'https://kiang.github.io/edutreemap.moe.edu.tw/json/tree/' + ui.item.value + '.json'
       }));
+      sidebar.close();
     }
   });
 });
